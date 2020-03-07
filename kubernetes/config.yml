@@ -8,7 +8,7 @@ build:
 docker:
 # Use the same Docker base as the project
 - image: python:3.7.3-stretch
-
+- image: circleci/ruby:2.4.1 #added by Kenny
 working_directory: ~/repo
 
 steps:
