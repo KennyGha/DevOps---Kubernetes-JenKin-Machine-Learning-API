@@ -1,7 +1,9 @@
 # Python CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
-#
+
+# Kenny 
+# Kubernetes + Ansible  + AWS Machine Learning + Jenkins + Circleci
 version: 2
 jobs:
 build:
