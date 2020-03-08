@@ -17,8 +17,8 @@ LOG.setLevel(logging.INFO)
 def scale(payload):
     """Scales Payload"""
 
-    #LOG.info(f'Scaling Payload: \n{payload}')
-    LOG.info('Scaling Payload: \n'+str(payload))
+    LOG.info(f'Scaling Payload: \n{payload}')
+    #LOG.info('Scaling Payload: \n'+str(payload))
     scaler = StandardScaler().fit(payload.astype(float))
     scaled_adhoc_predict = scaler.transform(payload.astype(float))
     return scaled_adhoc_predict
