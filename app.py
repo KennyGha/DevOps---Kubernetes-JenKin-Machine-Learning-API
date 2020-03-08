@@ -25,8 +25,8 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    #html = f"<h3>Sklearn Prediction Home</h3>"
-    html = "<h3>Sklearn Prediction Home</h3>"
+    html = f"<h3>Sklearn Prediction Home</h3>"
+    #html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
 @app.route("/predict", methods=['POST'])
@@ -61,18 +61,18 @@ def predict():
 
     # Logging the input payload
     json_payload = request.json
-    #LOG.info(f"JSON payload: \n{json_payload}")
-    LOG.info("JSON payload: \n"+str(json_payload))
+    LOG.info(f"JSON payload: \n{json_payload}")
+    #LOG.info("JSON payload: \n"+str(json_payload))
     inference_payload = pd.DataFrame(json_payload)
-    #LOG.info(f"Inference payload DataFrame: \n{inference_payload}")
-    LOG.info("Inference payload DataFrame: \n"+str(inference_payload))
+    LOG.info(f"Inference payload DataFrame: \n{inference_payload}")
+    #LOG.info("Inference payload DataFrame: \n"+str(inference_payload))
     # scale the input
     scaled_payload = scale(inference_payload)
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
-    #LOG.info(f"PREDICTION: {prediction}")
-    LOG.info("PREDICTION: "+str(prediction))
+    LOG.info(f"PREDICTION: {prediction}")
+    #LOG.info("PREDICTION: "+str(prediction))
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
