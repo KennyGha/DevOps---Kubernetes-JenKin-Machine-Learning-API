@@ -16,4 +16,3 @@ pytest
 requests
 pytest-cov
 nbval
-
