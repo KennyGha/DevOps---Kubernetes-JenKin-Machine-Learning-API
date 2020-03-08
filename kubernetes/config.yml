@@ -1,16 +1,14 @@
 # Python CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
-
-# Kenny 
-# Kubernetes + Ansible  + AWS Machine Learning + Jenkins + Circleci
+#
 version: 2
 jobs:
 build:
 docker:
 # Use the same Docker base as the project
 - image: python:3.7.3-stretch
-- image: circleci/ruby:2.4.1 #added by Kenny
+
 working_directory: ~/repo
 
 steps:
