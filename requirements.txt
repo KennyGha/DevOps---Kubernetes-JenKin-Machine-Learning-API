@@ -16,4 +16,4 @@ pytest
 requests
 pytest-cov
 nbval
-linuxbrew-wrapper
+
