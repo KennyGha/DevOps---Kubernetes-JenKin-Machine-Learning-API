@@ -39,7 +39,7 @@ jobs:
           - v1-dependencies-
       - run:
           name: Create virtual env
-          command: make setup
+          command: sudo make setup
       - run:
           name: Install packages
           command: make install
