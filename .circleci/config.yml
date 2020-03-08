@@ -39,10 +39,10 @@ jobs:
           - v1-dependencies-
       - run:
           name: Create virtual env
-          command: sudo make setup
+          command: make setup
       - run:
           name: Install packages
-          command: make install
+          command: sudo make install
       - run:
           name: Install hadolint
           command: | 
