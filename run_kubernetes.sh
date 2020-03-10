@@ -12,26 +12,24 @@
 
 #export PORT=8000
 
-dockerpath=kttyperdevops/devops:sklearnapp
-docker login --username=kttyperdevops
+dockerpath=kttyperdevops/devops
+#docker login --username=kttyperdevops
 
 
 #kubectl get deployments
 # Step 2
 # Run the Docker Hub container with kubernetes
+docker login --username=kttyperdevops --password=12qwaszxX!Asl
 
-#kubectl run sklearnapp --generator=run-pod/v1   --image=$dockerpath  --port=80  --labels app=sklearnapp
+#kubectl run sklearnapp  --image=$dockerpath:latest
+
+
+kubectl run sklearnapp --generator=run-pod/v1   --image=$dockerpath:sklearnapp  --port=5000
 
 #echo '13'
-kubectl run sklearnapp --image=dockerpath --port=80
+#kubectl run deployment.sklearnapp --image=$dockerpath --port=80
 
 
 # Step 3:
 # List kubernetes pods
 kubectl get pods
-
-# Step 4:
-# Forward the container port to a host
-#kubectl expose deployment sklearnapp --type="NodePort" --port 80sudo dock
-kubectl port-forward sklearnapp 8000:80
-#kubectl expose deployment/sklearnapp --type="NodePort" --port 5000
