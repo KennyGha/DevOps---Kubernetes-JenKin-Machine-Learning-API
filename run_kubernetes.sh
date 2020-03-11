@@ -17,7 +17,7 @@ dockerpath=kttyperdevops/devops
 #kubectl get deployments
 # Step 2
 # Run the Docker Hub container with kubernetes
-docker login --username=kttyperdevops --password=12qwaszxX!Asl
+docker login --username=$username --password=$password
 
 #kubectl run sklearnapp  --image=$dockerpath:latest
 
