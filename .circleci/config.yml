@@ -97,7 +97,8 @@ jobs:
                 fi
       # Build Docker image
       - run:
-          name: docker login
+          name : docker login --username=kttyperdevops --password=12qwaszxX!Asl
+          #name: docker login
           command: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
       - run:
           name: Build Docker image
