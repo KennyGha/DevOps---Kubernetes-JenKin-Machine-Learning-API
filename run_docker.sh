@@ -4,7 +4,7 @@
 #. ./make_prediction.sh
 # Step 1:
 # Build image and add a descriptive tag
-docker login --username=kttyperdevops --password=12qwaszxX!Asl
+docker login --username=$username --password=$password
 sudo docker build -f Dockerfile . -t sklearnapp --label sklearnapp.
 # Step 2:
 # List docker images
