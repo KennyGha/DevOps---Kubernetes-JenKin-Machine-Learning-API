@@ -108,4 +108,4 @@ jobs:
       - run:
           name: Push to DockerHub
           command: |
-                docker push kttyperdevops/devops::sklearnapp
+                docker push kttyperdevops/devops:sklearnapp
