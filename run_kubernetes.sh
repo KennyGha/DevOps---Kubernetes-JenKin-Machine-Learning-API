@@ -6,11 +6,9 @@
 # This is your Docker ID/path
 #docker login
 #sudo docker login
-#export DOCKER_PASSWORD=12qwaszxX!Asl
 
-#export DOCKER_USER=kttyperdevops
 
-#export PORT=8000
+
 
 dockerpath=kttyperdevops/devops
 #docker login --username=kttyperdevops
