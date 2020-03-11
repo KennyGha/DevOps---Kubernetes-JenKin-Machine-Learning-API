@@ -10,7 +10,7 @@ dockerpath=kttyperdevops/devops
 # Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username=kttyperdevops
+docker login --username=kttyperdevops --password=12qwaszxX!Asl
 docker tag sklearnapp kttyperdevops/devops:sklearnapp
 # Step 3:
 # Push image to a docker repository
