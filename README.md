@@ -1,5 +1,3 @@
-<include a CircleCI status badge, here>
-
 [![CircleCI](https://circleci.com/gh/KennyGha/devops.svg?style=svg)](https://circleci.com/gh/KennyGha/devops)
 
 ## Project Overview
