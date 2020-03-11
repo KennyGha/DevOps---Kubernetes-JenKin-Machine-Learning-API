@@ -70,15 +70,14 @@ jobs:
   build_docker:
     docker:
       - image: circleci/python:3.7.3-stretch
-      - setup_remote_docker:
-          docker_layer_caching: false  # default - false
+      
 
     working_directory: ~/repo
 
     steps:
       - checkout
       - setup_remote_docker:
-          docker_layer_caching: true
+          docker_layer_caching: false
 
         # Download and cache dependencies
       - restore_cache:
